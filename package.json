@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "MIT",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zerebel/dev-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "tailwindcss",
+    "css",
+    "html",
+    "js",
+    "react",
+    "zerebel",
+    "devchallenge"
+  ],
+  "author": "Zerebel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zerebel/dev-portfolio/issues"
+  },
+  "homepage": "https://github.com/Zerebel/dev-portfolio#readme"
+}
