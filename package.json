@@ -4,7 +4,7 @@
   "description": "MIT",
   "main": "index.html",
   "scripts": {
-    "tail": "tailwindcss -i ./assets/style/css/style.css -o ./assets/style/css/output.css --watch"
+    "tail": "tailwindcss -i ./assets/style/css/style.css -o ./assets/style/css/output.css --watch "
   },
   "repository": {
     "type": "git",
