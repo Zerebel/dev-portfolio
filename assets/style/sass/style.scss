@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@mixin progress {
+  appearance: none;
+  @apply bg-honeydew;
+  height: 0.3rem;
+  @apply w-full;
+}
+progress {
+  @include progress();
+}
+
+progress::-moz-progress-bar {
+  @include progress();
+}
+
+progress::-webkit-progress-bar {
+  @include progress();
+}

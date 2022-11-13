@@ -24,31 +24,97 @@
       href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
       rel="stylesheet" />
     <link
-      href="https://fonts.googleapis.com/css?family=Heebo:100,200,300,regular,500,600,700,800,900"
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700"
       rel="stylesheet" />
     <!-- #endregion Fonts -->
   </head>
   <body class="bg-[#F2F2F2] mx-2 my-4 md:mx-8 lg:mx-32 text-gray_1">
     <header
-      class="flex flex-col md:flex-row gap-4 md:gap-0 lg:gap-4 bg-white p-4 rounded-2xl">
+      class="flex flex-col md:flex-row gap-4 md:gap-0 lg:gap-4 bg-white p-4 rounded-2xl font-quicksand">
       <!-- Image -->
       <div class="self-center flex justify-center md:justify-start">
         <img
           src="assets/img/person1.png"
           alt="Profile Photo"
-          class="rounded-xl w-3/5 md:w-3/4 lg:w-full" />
+          class="rounded-xl w-3/5 md:w-11/12 lg:w-full" />
       </div>
       <!-- Personal Info -->
-      <div class="flex flex-col md:flex-row">
-        <div>
-          <p class="text-xl md:text-2xl lg:text-3xl font-montserrat">
-            Tanu Zerebel
+      <div class="flex flex-col gap-4 md:gap-6 w-full">
+        <!-- Name and Email -->
+        <div
+          class="flex flex-col md:flex-row md:justify-between gap-2 md:gap-0 w-full">
+          <!-- Name -->
+          <div>
+            <p
+              class="text-xl md:text-2xl lg:text-3xl font-quicksand tracking-widest">
+              Tanu Zerebel
+            </p>
+            <p class="text-gray_3">Front-end developer</p>
+          </div>
+          <!-- Email -->
+          <div class="text-xs md:text-sm text-gray_1 font-montserrat">
+            <p class="flex items-center justify-start gap-2">
+              <i class="material-icons">mail</i>
+              <a href="mailto:kofitruth11@gmail.com">kofitruth11@gmail.com</a>
+            </p>
+            <p class="flex items-center justify-start gap-2">
+              <i class="material-icons">phone</i>
+              <a href="tel:+233200926461">(+233) 206 989 013</a>
+            </p>
+          </div>
+        </div>
+        <!-- Description -->
+        <div
+          class="flex flex-col text-sm md:text-base lg:text-lg md:gap-4 leading-5 text-gray_3">
+          <p class="">
+            Self-motivated developer, who is willing to learn and create
+            outstanding <br class="md:block hidden" />
+            UI applications.
           </p>
-          <p class="text-gray_3">Front-end developer</p>
+          <p class="hidden md:block">
+            Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque
+            <br class="hidden md:block" />
+            feugiat malesuada molestie.
+          </p>
         </div>
       </div>
-      <!-- Email -->
-      <div></div>
     </header>
+    <main class="my-4">
+      <section class="flex flex-col md:flex-row justify-between">
+        <!-- front end -->
+        <div class="bg-white p-4 rounded-2xl">
+          <p class="text-lg font-montserrat font-bold">Front-end</p>
+          <!-- Cats -->
+          <div
+            class="grid grid-cols-[auto,1fr] md:grid-cols-[repeat(4,minmax(0,auto))] place-items-center justify-items-start gap-4 text-gray_1 text-sm lg:text-base font-normal font-montserrat capitalize">
+            <!-- cat1 -->
+            <p contenteditable="true">react</p>
+            <progress class="relative" value="80" max="100">
+              <div
+                class="absolute top-0 left-0 w-24 bg-seaGreenCrayola h-4"></div>
+            </progress>
+            <p>vue</p>
+            <progress class="" value="5" max="10"></progress>
+            <p>javascript</p>
+            <progress class=""></progress>
+
+            <!-- cat2 -->
+            <p>redux</p>
+            <progress class=""></progress>
+            <p>cSS</p>
+            <progress class=""></progress>
+            <p>react native</p>
+            <progress class=""></progress>
+          </div>
+        </div>
+        <!-- design and cv -->
+        <div>
+          <!-- design -->
+          <div>b</div>
+          <!-- cv -->
+          <div>c</div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

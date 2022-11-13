@@ -1,5 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+progress {
+  appearance: none;
+  @apply bg-honeydew;
+  height: 0.3rem;
+  @apply w-full;
+}
+
+progress::-moz-progress-bar {
+  appearance: none;
+  @apply bg-honeydew;
+  height: 0.3rem;
+  @apply w-full;
+}
+
+progress::-webkit-progress-bar {
+  appearance: none;
+  @apply bg-honeydew;
+  height: 0.3rem;
+  @apply w-full;
+}
 
 /*# sourceMappingURL=style.css.map */

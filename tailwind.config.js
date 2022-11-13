@@ -7,7 +7,7 @@ module.exports = {
       fontFamily: {
         montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
         poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
-        heebo: ['Heebo', ...defaultTheme.fontFamily.sans],
+        quicksand: ['Quicksand', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         minionYellow: '#FFE347',
