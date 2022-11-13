@@ -551,22 +551,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.relative {
-  position: relative;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -589,20 +573,12 @@ video {
   display: none;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
 .w-3\/5 {
   width: 60%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-24 {
-  width: 6rem;
 }
 
 .grid-cols-\[auto\2c 1fr\] {
@@ -671,11 +647,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-seaGreenCrayola {
-  --tw-bg-opacity: 1;
-  background-color: rgb(35 240 199 / var(--tw-bg-opacity));
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -716,6 +687,10 @@ video {
   font-weight: 400;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .capitalize {
   text-transform: capitalize;
 }
@@ -747,27 +722,87 @@ progress {
      -moz-appearance: none;
           appearance: none;
   --tw-bg-opacity: 1;
-  background-color: rgb(223 243 227 / var(--tw-bg-opacity));
+  background-color: rgb(35 240 199 / var(--tw-bg-opacity));
   height: 0.3rem;
   width: 100%;
+}
+
+progress[value] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(223 243 227 / var(--tw-bg-opacity));
+  -webkit-animation: color 5s ease-in-out 0s infinite backwards;
+          animation: color 5s ease-in-out 0s infinite backwards;
+}
+
+@-webkit-keyframes color {
+  from {
+    width: 91.666667%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes color {
+  from {
+    width: 91.666667%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 progress::-moz-progress-bar {
   -moz-appearance: none;
        appearance: none;
   --tw-bg-opacity: 1;
-  background-color: rgb(223 243 227 / var(--tw-bg-opacity));
+  background-color: rgb(35 240 199 / var(--tw-bg-opacity));
   height: 0.3rem;
   width: 100%;
+}
+
+progress::-moz-progress-bar[value] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(223 243 227 / var(--tw-bg-opacity));
+  animation: color 5s ease-in-out 0s infinite backwards;
+}
+
+@keyframes color {
+  from {
+    width: 91.666667%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 progress::-webkit-progress-bar {
   -webkit-appearance: none;
           appearance: none;
   --tw-bg-opacity: 1;
-  background-color: rgb(223 243 227 / var(--tw-bg-opacity));
+  background-color: rgb(35 240 199 / var(--tw-bg-opacity));
   height: 0.3rem;
   width: 100%;
+}
+
+progress::-webkit-progress-bar[value] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(223 243 227 / var(--tw-bg-opacity));
+  -webkit-animation: color 5s ease-in-out 0s infinite backwards;
+          animation: color 5s ease-in-out 0s infinite backwards;
+}
+
+@keyframes color {
+  from {
+    width: 91.666667%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {

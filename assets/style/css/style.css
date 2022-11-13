@@ -3,23 +3,59 @@
 @tailwind utilities;
 progress {
   appearance: none;
-  @apply bg-honeydew;
+  @apply bg-seaGreenCrayola;
   height: 0.3rem;
   @apply w-full;
+}
+progress[value] {
+  @apply bg-honeydew;
+  animation: color 5s ease-in-out 0s infinite backwards;
+}
+@keyframes color {
+  from {
+    @apply w-11/12;
+  }
+  to {
+    @apply w-full;
+  }
 }
 
 progress::-moz-progress-bar {
   appearance: none;
-  @apply bg-honeydew;
+  @apply bg-seaGreenCrayola;
   height: 0.3rem;
   @apply w-full;
+}
+progress::-moz-progress-bar[value] {
+  @apply bg-honeydew;
+  animation: color 5s ease-in-out 0s infinite backwards;
+}
+@keyframes color {
+  from {
+    @apply w-11/12;
+  }
+  to {
+    @apply w-full;
+  }
 }
 
 progress::-webkit-progress-bar {
   appearance: none;
-  @apply bg-honeydew;
+  @apply bg-seaGreenCrayola;
   height: 0.3rem;
   @apply w-full;
+}
+progress::-webkit-progress-bar[value] {
+  @apply bg-honeydew;
+  animation: color 5s ease-in-out 0s infinite backwards;
+}
+@keyframes color {
+  from {
+    @apply w-11/12;
+  }
+  to {
+    @apply w-full;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

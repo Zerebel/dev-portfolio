@@ -4,10 +4,23 @@
 
 @mixin progress {
   appearance: none;
-  @apply bg-honeydew;
+  @apply bg-seaGreenCrayola;
   height: 0.3rem;
   @apply w-full;
+  &[value] {
+    @apply bg-honeydew;
+    animation: color 5s ease-in-out 0s infinite backwards;
+  }
+  @keyframes color {
+    from {
+      @apply w-11/12;
+    }
+    to {
+      @apply w-full;
+    }
+  }
 }
+
 progress {
   @include progress();
 }
